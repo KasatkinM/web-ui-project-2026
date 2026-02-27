@@ -16,6 +16,18 @@
             justify-content: center;
             color: white;
         }
+        .hero-box {
+        background-color: rgba(0, 0, 0, 0.6); /* Musta tausta, 60% näkyvyys */
+        color: white;
+        padding: 40px; /* Tilaa tekstin ympärillä */
+        border-radius: 15px; /* Pyöristetyt kulmat */
+        max-width: 600px; /* Laatikko ei levahdä liian leveäksi */
+        text-align: center;
+        
+        /* BONUS: Tämä tekee "frosted glass" eli maitolasi-efektin */
+        backdrop-filter: blur(10px); 
+        border: 1px solid rgba(255, 255, 255, 0.2); /* Ohut reunaviiva */
+        }
         .large-image { width: 80%; } /* Tehtävän 60-90% kuva */
     </style>
 </head>
@@ -33,8 +45,12 @@
     </nav>
 
     <header class="hero-section text-center">
-        <h1>Ibanez RG550 Kieltenvaihto</h1>
-        <p>Täydellinen opas Edge-tallan säätämiseen.</p>
+        <div class="hero-box">
+            <h1>Ibanez RG550 Kieltenvaihto</h1>
+            <p> Opas Edge-tallan säätämiseen.</p>
+            <a href="#valmistelut" class="btn btn-outline-light mt-3">Aloita huolto</a>
+        </div>
+        
     </header>
 
     <main class="container my-5">
