@@ -6,9 +6,9 @@
     <title>Ibanez RG550 Huolto-opas</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
-        /* Tähän voit lisätä omia tyylejä */
+        
         .hero-section {
-            background-image: url('Web-projekti_Osa1_MaximKasatkin/DSC_0586.jpg'); /* Tehtävän 100% taustakuva */
+            background-image: url('Web-projekti_Osa1_MaximKasatkin/DSC_0586.jpg');
             height: 100vh;
             background-size: cover;
             display: flex;
@@ -17,30 +17,21 @@
             color: white;
         }
         .hero-box {
-            background-color: rgba(0, 0, 0, 0.6); /* Musta tausta, 60% näkyvyys */
+            background-color: rgba(0, 0, 0, 0.6);
             color: white;
-            padding: 40px; /* Tilaa tekstin ympärillä */
-            border-radius: 15px; /* Pyöristetyt kulmat */
-            max-width: 600px; /* Laatikko ei levahdä liian leveäksi */
+            padding: 40px;
+            border-radius: 15px; 
+            max-width: 600px;
             text-align: center;
-        
-        /* BONUS: Tämä tekee "frosted glass" eli maitolasi-efektin */
             backdrop-filter: blur(10px); 
-            border: 1px solid rgba(255, 255, 255, 0.2); /* Ohut reunaviiva */
+            border: 1px solid rgba(255, 255, 255, 0.2);
         }
-        .large-image { width: 80%; } /* Tehtävän 60-90% kuva */
-
-        .small-image { width: 20%; } /* Täyttää 10-30% kriteerin */
-        .img-link { width: 50px; transition: transform 0.2s; }
-        .img-link:hover { transform: scale(1.1); } /* Pieni efekti on aina plussaa */
         
-        .img-link-icon {
-            width: 60px; 
-            transition: transform 0.2s;
-        }
-        .img-link-icon:hover {
-            transform: scale(1.1); 
-        }
+        .large-image { width: 80%; }
+        .small-image { width: 20%; }
+        .img-link { width: 60px; transition: transform 0.2s; }
+        .img-link:hover { transform: scale(1.1); }
+        
         .video-container {
             max-width: 600px;
             margin: 2rem auto;
@@ -50,16 +41,24 @@
         }
         
         section {
-            scroll-margin-top: 180px; /* Säädä tätä lukua navbarisi korkeuden mukaan */
+            scroll-margin-top: 180px;
         }
         html {
             scroll-behavior: smooth;
+        }
+       
+        @media (min-height: 400px) {
+            .navbar {
+                position: sticky;
+                top: 0;
+                z-index: 1020;
+            }
         }
     </style>
 </head>
 <body>
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
             <a class="navbar-brand" href="#">RG550 Opas</a>
             <div class="navbar-nav">
