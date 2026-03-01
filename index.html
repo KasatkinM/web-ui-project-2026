@@ -34,6 +34,21 @@
         .img-link { width: 50px; transition: transform 0.2s; }
         .img-link:hover { transform: scale(1.1); } /* Pieni efekti on aina plussaa */
         
+        .img-link-icon {
+            width: 60px; 
+            transition: transform 0.2s;
+        }
+        .img-link-icon:hover {
+            transform: scale(1.1); 
+        }
+        .video-container {
+            max-width: 600px;
+            margin: 2rem auto;
+        }
+        .rotate-90 {
+            transform: rotate(90deg);
+        }
+        
         section {
             scroll-margin-top: 180px; /* Säädä tätä lukua navbarisi korkeuden mukaan */
         }
@@ -105,6 +120,14 @@
                 <li>Viritysmittari</li>
             </ul>
             <img src="Web-projekti_Osa1_MaximKasatkin/PXL_20260228_214137558.jpg" class="img-fluid rounded large-image mx-auto d-block" alt="Työkalut">
+            
+            <p class="small text-muted">
+                Työkalun saat esimerkiksi täältä:
+            </p>
+            <a href="https://www.thomann.de/fi/ibanez_multitool_hex_wrench_mtz11.htm" target="_blank">
+                <img src="Web-projekti_Osa1_MaximKasatkin/image.png" class="img-link-icon" alt="Ibanez official link">
+            </a>
+            
         </section>
 
         <section id="purkaminen" class="container min-vh-100 py-5 bg-light">
@@ -228,7 +251,7 @@
                 </div>
                 <div class="col">
                     <div class="card h-100 border-0 shadow-sm">
-                        <img src="Web-projekti_Osa1_MaximKasatkin/PXL_20260301_191732767.jpg.jpg" class="card-img-top rounded" alt="Kiinnitä tremoloon">
+                        <img src="Web-projekti_Osa1_MaximKasatkin/PXL_20260301_191732767.jpg" class="card-img-top rounded" alt="Kiinnitä tremoloon">
                         <div class="card-body p-2 text-center small text-muted">
                             3. Kiinnitä kielet tremoloon
                         </div>
@@ -260,7 +283,7 @@
                 </div>
                 <div class="col">
                     <div class="card h-100 border-0 shadow-sm">
-                        <img src="Web-projekti_Osa1_MaximKasatkin/PXL_20260228_161853843.jpg" class="card-img-top rounded" alt="Tremolo tasapainossa?">
+                        <img src="Web-projekti_Osa1_MaximKasatkin/PXL_20260228_161853843.jpg" class="card-img-top rounded rotate-90" alt="Tremolo tasapainossa?">
                         <div class="card-body p-2 text-center small text-muted">
                             7.  Varmista, että tremolo on tasapainossa
                         </div>
@@ -275,6 +298,14 @@
                     </div>
                 </div>
             </div>
+            
+            <div class="video-container">
+                <h4>Videovinkki: Edge-tallan hienosäätö</h4>
+                <div class="ratio ratio-16x9">
+                    <iframe src="https://www.youtube.com/embed/DxkMQvmKZaM?si=SJPg5BjmNxVtTGW6" title="YouTube video" allowfullscreen></iframe>
+                </div>
+            </div>
+            
         </section>
 
         <section id="loppusanat" class="container py-5">
